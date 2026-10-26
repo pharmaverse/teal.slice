@@ -22,7 +22,7 @@ clear_filter_states(datasets, force = FALSE)
   shared across modules
 
   see
-  [`FilteredData`](https://insightsengineering.github.io/teal.slice/reference/FilteredData.md)
+  [`FilteredData`](https://pharmaverse.github.io/teal.slice/reference/FilteredData.md)
   for details
 
 - filter:
@@ -43,7 +43,7 @@ clear_filter_states(datasets, force = FALSE)
 
 ## See also
 
-[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
 
 ## Examples
 

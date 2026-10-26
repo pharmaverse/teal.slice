@@ -72,16 +72,16 @@ and will raise an error.
 #### 1. Setting the filter state
 
 \
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.slice`](https://insightsengineering.github.io/teal.slice/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.slice`](https://pharmaverse.github.io/teal.slice/)`)`\
 \
-`datasets`` ``<-`` `[`init_filtered_data`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
+`datasets`` ``<-`` `[`init_filtered_data`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
 \
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  datasets ``=`` ``datasets``,`\
-`  filter ``=`` `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
+`  filter ``=`` `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
 `    include_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"Species"``, ``"Sepal.Length"``)``)``,`\
 `    exclude_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``mtcars ``=`` ``"cyl"``)`\
 `  ``)`\
@@ -90,17 +90,17 @@ and will raise an error.
 #### 2. Updating filter states. \*Works only in the `shiny` reactive context.
 
 \
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  datasets ``=`` ``datasets``,`\
-`  filter ``=`` `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``22.0``, ``25.0``)``)`\
+`  filter ``=`` `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``22.0``, ``25.0``)``)`\
 `  ``)`\
 `)`
 
 #### 3. Getting the filter state
 
 \
-[`get_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)`
+[`get_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)`
 
     ## {
     ##   "slices": [
@@ -151,17 +151,17 @@ and will raise an error.
 #### 4. Removing filter states
 
 \
-[`remove_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`remove_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  datasets ``=`` ``datasets``,`\
-`  filter ``=`` `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``)`\
+`  filter ``=`` `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``)`\
 `  ``)`\
 `)`
 
 #### 5. Clearing the filter state
 
 \
-[`clear_filter_states`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)`
+[`clear_filter_states`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)`
 
 ### Controlling settings of the filter panel
 
@@ -176,9 +176,9 @@ function:
     set.
 
 \
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  ``datasets``,`\
-`  `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
+`  `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
 `    include_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(`\
 `      iris ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"Species"``, ``"Sepal.Length"``)``,`\
 `      mtcard ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"cyl"``, ``"mpg"``)`\
@@ -191,9 +191,9 @@ function:
     variables except the four will be available to choose from.
 
 \
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  ``datasets``,`\
-`  `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
+`  `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
 `    exclude_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(`\
 `      iris ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"Species"``, ``"Sepal.Length"``)``,`\
 `      mtcard ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"cyl"``, ``"mpg"``)`\
@@ -229,15 +229,15 @@ All the instructions herein can be utilized to build a `shiny` app.
 
 \
 `# initializing FilteredData`\
-`datasets`` ``<-`` `[`init_filtered_data`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
+`datasets`` ``<-`` `[`init_filtered_data`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
 \
 `# setting initial filters`\
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  datasets ``=`` ``datasets``,`\
-`  filter ``=`` `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
+`  filter ``=`` `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
 `    include_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"Species"``, ``"Sepal.Length"``)``)``,`\
 `    exclude_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``mtcars ``=`` ``"cyl"``)``,`\
 `    count_type ``=`` ``"all"``,`\
@@ -266,7 +266,7 @@ All the instructions herein can be utilized to build a `shiny` app.
 `  ``datasets``$``srv_filter_panel``(``"filter_panel"``)`\
 \
 `  ``# displaying actual filter states`\
-`  ``output``$``filter_state`` ``<-`` `[`renderPrint`](https://rdrr.io/pkg/shiny/man/renderPrint.html)`(`[`print`](https://rdrr.io/r/base/print.html)`(`[`get_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)``, trim ``=`` ``FALSE``)``)`\
+`  ``output``$``filter_state`` ``<-`` `[`renderPrint`](https://rdrr.io/pkg/shiny/man/renderPrint.html)`(`[`print`](https://rdrr.io/r/base/print.html)`(`[`get_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)``, trim ``=`` ``FALSE``)``)`\
 \
 `  ``# displaying reproducible filter call`\
 `  ``output``$``rcode`` ``<-`` `[`renderText`](https://rdrr.io/pkg/shiny/man/renderPrint.html)`(`\
@@ -278,24 +278,24 @@ All the instructions herein can be utilized to build a `shiny` app.
 \
 `  ``# programmatic interaction with FilteredData`\
 `  `[`observeEvent`](https://rdrr.io/pkg/shiny/man/observeEvent.html)`(``input``$``add_species_filter``, ``{`\
-`    `[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+`    `[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `      ``datasets``,`\
-`      `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`        `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"setosa"``, ``"versicolor"``)``)`\
+`      `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`        `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"setosa"``, ``"versicolor"``)``)`\
 `      ``)`\
 `    ``)`\
 `  ``}``)`\
 \
 `  ``# programmatic removal of the FilterState`\
 `  `[`observeEvent`](https://rdrr.io/pkg/shiny/man/observeEvent.html)`(``input``$``remove_species_filter``, ``{`\
-`    `[`remove_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+`    `[`remove_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `      ``datasets``,`\
-`      `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`        `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``)`\
+`      `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`        `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``)`\
 `      ``)`\
 `    ``)`\
 `  ``}``)`\
-`  `[`observeEvent`](https://rdrr.io/pkg/shiny/man/observeEvent.html)`(``input``$``remove_all_filters``, `[`clear_filter_states`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)``)`\
+`  `[`observeEvent`](https://rdrr.io/pkg/shiny/man/observeEvent.html)`(``input``$``remove_all_filters``, `[`clear_filter_states`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(``datasets``)``)`\
 `}`\
 \
 `if`` ``(`[`interactive`](https://rdrr.io/r/base/interactive.html)`(``)``)`` ``{`\

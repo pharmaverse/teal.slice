@@ -4,7 +4,7 @@ Manages choosing a range of `Date`s.
 
 ## Super class
 
-[`FilterState`](https://insightsengineering.github.io/teal.slice/reference/FilterState.md)
+[`FilterState`](https://pharmaverse.github.io/teal.slice/reference/FilterState.md)
 -\> `DateFilterState`
 
 ## Methods
@@ -19,13 +19,13 @@ Manages choosing a range of `Date`s.
 
 Inherited methods
 
-- [`FilterState$destroy()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-destroy)
-- [`FilterState$format()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-format)
-- [`FilterState$get_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-get_state)
-- [`FilterState$print()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-print)
-- [`FilterState$server()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-server)
-- [`FilterState$set_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-set_state)
-- [`FilterState$ui()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-ui)
+- [`FilterState$destroy()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-destroy)
+- [`FilterState$format()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-format)
+- [`FilterState$get_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-get_state)
+- [`FilterState$print()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-print)
+- [`FilterState$server()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-server)
+- [`FilterState$set_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-set_state)
+- [`FilterState$ui()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-ui)
 
 ------------------------------------------------------------------------
 
@@ -148,7 +148,7 @@ filter_state$set_state(
   )
 )
 isolate(filter_state$get_call())
-#> is.na(x) | x >= as.Date("2026-10-10") & x <= as.Date("2026-10-15")
+#> is.na(x) | x >= as.Date("2026-10-29") & x <= as.Date("2026-11-03")
 
 # working filter in an app
 library(shinyjs)

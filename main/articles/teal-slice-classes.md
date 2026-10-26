@@ -235,7 +235,7 @@ behaviors, it is implemented around a `reactiveValues` object to allow
 shared state in advanced `teal` applications.
 
 See
-[`?teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+[`?teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
 for a detailed explanation.
 
 ## Making a reproducible filter call

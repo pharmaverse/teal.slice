@@ -46,7 +46,7 @@ Modifying a `FilterState` object is possible in three scenarios:
 - In a running application, by changing appropriate inputs.
 
 - In a running application, by using
-  [filter_state_api](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)
+  [filter_state_api](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)
   which directly uses `set_state` method of the `FilterState` object.
 
 ## Methods

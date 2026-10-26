@@ -4,7 +4,7 @@ Manages choosing elements from a set.
 
 ## Super class
 
-[`FilterState`](https://insightsengineering.github.io/teal.slice/reference/FilterState.md)
+[`FilterState`](https://pharmaverse.github.io/teal.slice/reference/FilterState.md)
 -\> `ChoicesFilterState`
 
 ## Methods
@@ -19,13 +19,13 @@ Manages choosing elements from a set.
 
 Inherited methods
 
-- [`FilterState$destroy()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-destroy)
-- [`FilterState$format()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-format)
-- [`FilterState$get_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-get_state)
-- [`FilterState$print()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-print)
-- [`FilterState$server()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-server)
-- [`FilterState$set_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-set_state)
-- [`FilterState$ui()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-ui)
+- [`FilterState$destroy()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-destroy)
+- [`FilterState$format()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-format)
+- [`FilterState$get_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-get_state)
+- [`FilterState$print()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-print)
+- [`FilterState$server()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-server)
+- [`FilterState$set_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-set_state)
+- [`FilterState$ui()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-ui)
 
 ------------------------------------------------------------------------
 

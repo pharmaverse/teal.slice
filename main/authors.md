@@ -40,18 +40,18 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/insightsengineering/teal.slice/blob/main/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/pharmaverse/teal.slice/blob/main/DESCRIPTION)
 
 Kaledkowski D, Rucki P, Chlebowski A, Verissimo A, Revilla Sancho L,
 Kirar K, Kosinski M, Liao C, Bates A, Hallal M, Burkoff N, Nasinski M,
 Pagacz K, Zhao J (2026). *teal.slice: Filter Module for 'teal'
 Applications*. R package version 0.8.2.9004,
-<https://insightsengineering.github.io/teal.slice/>.
+<https://pharmaverse.github.io/teal.slice/>.
 
 @Manual{,\
   title = {teal.slice: Filter Module for 'teal' Applications},\
   author = {Dawid Kaledkowski and Pawel Rucki and Aleksander Chlebowski and Andre Verissimo and Lluís {Revilla Sancho} and Kartikeya Kirar and Marcin Kosinski and Chendi Liao and Andrew Bates and Mahmoud Hallal and Nikolas Burkoff and Maciej Nasinski and Konrad Pagacz and Junlue Zhao},\
   year = {2026},\
   note = {R package version 0.8.2.9004},\
-  url = {https://insightsengineering.github.io/teal.slice/},\
+  url = {https://pharmaverse.github.io/teal.slice/},\
 }

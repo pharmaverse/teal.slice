@@ -4,7 +4,7 @@ Manages choosing a range of date-times.
 
 ## Super class
 
-[`FilterState`](https://insightsengineering.github.io/teal.slice/reference/FilterState.md)
+[`FilterState`](https://pharmaverse.github.io/teal.slice/reference/FilterState.md)
 -\> `DatetimeFilterState`
 
 ## Methods
@@ -19,13 +19,13 @@ Manages choosing a range of date-times.
 
 Inherited methods
 
-- [`FilterState$destroy()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-destroy)
-- [`FilterState$format()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-format)
-- [`FilterState$get_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-get_state)
-- [`FilterState$print()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-print)
-- [`FilterState$server()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-server)
-- [`FilterState$set_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-set_state)
-- [`FilterState$ui()`](https://insightsengineering.github.io/teal.slice/reference/FilterState.html#method-ui)
+- [`FilterState$destroy()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-destroy)
+- [`FilterState$format()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-format)
+- [`FilterState$get_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-get_state)
+- [`FilterState$print()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-print)
+- [`FilterState$server()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-server)
+- [`FilterState$set_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-set_state)
+- [`FilterState$ui()`](https://pharmaverse.github.io/teal.slice/reference/FilterState.html#method-ui)
 
 ------------------------------------------------------------------------
 
@@ -144,8 +144,8 @@ filter_state <- DatetimeFilterState$new(
   extract_type = character(0)
 )
 isolate(filter_state$get_call())
-#> is.na(x) | x >= as.POSIXct("2026-10-07 12:15:00", tz = "Etc/UTC") & 
-#>     x < as.POSIXct("2026-10-07 21:15:01", tz = "Etc/UTC")
+#> is.na(x) | x >= as.POSIXct("2026-10-26 08:38:40", tz = "Etc/UTC") & 
+#>     x < as.POSIXct("2026-10-26 17:38:41", tz = "Etc/UTC")
 filter_state$set_state(
   teal_slice(
     dataname = "data",
@@ -155,8 +155,8 @@ filter_state$set_state(
   )
 )
 isolate(filter_state$get_call())
-#> is.na(x) | x >= as.POSIXct("2026-10-07 12:15:03.21037", tz = "Etc/UTC") & 
-#>     x < as.POSIXct("2026-10-07 12:15:09.210396", tz = "Etc/UTC")
+#> is.na(x) | x >= as.POSIXct("2026-10-26 08:38:43.727846", tz = "Etc/UTC") & 
+#>     x < as.POSIXct("2026-10-26 08:38:49.727872", tz = "Etc/UTC")
 
 # working filter in an app
 library(shinyjs)

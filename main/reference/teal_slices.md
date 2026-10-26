@@ -2,7 +2,7 @@
 
 Create `teal_slices` object to package multiple filters and additional
 settings. Check out
-[`teal_slices-utilities`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md)
+[`teal_slices-utilities`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md)
 functions for working with `teal_slices` object.
 
 ## Usage
@@ -33,7 +33,7 @@ teal_slices(
 
   *This is a new feature. Do kindly share your opinions on
   [`teal.slice`'s GitHub
-  repository](https://github.com/insightsengineering/teal.slice/).*
+  repository](https://github.com/pharmaverse/teal.slice/).*
 
   (`character(1)`) string specifying how observations are tallied by
   these filter states. Possible options:
@@ -72,20 +72,20 @@ for one data set in one `teal_slices`.
 
 ## See also
 
-- [`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+- [`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
   for creating constituent elements of `teal_slices`
 
-- [`teal::slices_store`](https://insightsengineering.github.io/teal/latest-tag/reference/slices_store.html)
+- [`teal::slices_store`](https://rdrr.io/pkg/teal/man/slices_store.html)
   for robust utilities for saving and loading `teal_slices` in `JSON`
   format
 
-- [`is.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md),
-  [`as.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md),
-  [`as.list.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md),
+- [`is.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md),
+  [`as.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md),
+  [`as.list.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md),
   \[`[.teal_slices`\],
-  [`c.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md)
-  [`print.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md),
-  [`format.teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md)
+  [`c.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md)
+  [`print.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md),
+  [`format.teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md)
 
 ## Examples
 

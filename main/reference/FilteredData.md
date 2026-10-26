@@ -121,7 +121,7 @@ Initialize a `FilteredData` object.
 - `join_keys`:
 
   (`join_keys`) optional joining keys, see
-  [`teal.data::join_keys()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/join_keys.html).
+  [`teal.data::join_keys()`](https://rdrr.io/pkg/teal.data/man/join_keys.html).
 
 ------------------------------------------------------------------------
 
@@ -394,7 +394,7 @@ Set the `join_keys`.
 - `join_keys`:
 
   (`join_keys`), see
-  [`teal.data::join_keys()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/join_keys.html).
+  [`teal.data::join_keys()`](https://rdrr.io/pkg/teal.data/man/join_keys.html).
 
 #### Returns
 

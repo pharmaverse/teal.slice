@@ -17,7 +17,7 @@ init_filtered_data(x, join_keys = teal.data::join_keys())
 - join_keys:
 
   (`join_keys`) see
-  [`teal.data::join_keys()`](https://insightsengineering.github.io/teal.data/latest-tag/reference/join_keys.html).
+  [`teal.data::join_keys()`](https://rdrr.io/pkg/teal.data/man/join_keys.html).
 
 ## Value
 

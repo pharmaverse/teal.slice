@@ -4,7 +4,7 @@ Handles filter states in a `SummaryExperiment`.
 
 ## Super class
 
-[`FilterStates`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.md)
+[`FilterStates`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.md)
 -\> `SEFilterStates`
 
 ## Methods
@@ -23,15 +23,15 @@ Handles filter states in a `SummaryExperiment`.
 
 Inherited methods
 
-- [`FilterStates$clear_filter_states()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-clear_filter_states)
-- [`FilterStates$destroy()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-destroy)
-- [`FilterStates$format()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-format)
-- [`FilterStates$get_call()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-get_call)
-- [`FilterStates$get_filter_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-get_filter_state)
-- [`FilterStates$print()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-print)
-- [`FilterStates$remove_filter_state()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-remove_filter_state)
-- [`FilterStates$srv_active()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-srv_active)
-- [`FilterStates$ui_active()`](https://insightsengineering.github.io/teal.slice/reference/FilterStates.html#method-ui_active)
+- [`FilterStates$clear_filter_states()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-clear_filter_states)
+- [`FilterStates$destroy()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-destroy)
+- [`FilterStates$format()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-format)
+- [`FilterStates$get_call()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-get_call)
+- [`FilterStates$get_filter_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-get_filter_state)
+- [`FilterStates$print()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-print)
+- [`FilterStates$remove_filter_state()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-remove_filter_state)
+- [`FilterStates$srv_active()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-srv_active)
+- [`FilterStates$ui_active()`](https://pharmaverse.github.io/teal.slice/reference/FilterStates.html#method-ui_active)
 
 ------------------------------------------------------------------------
 

@@ -4,7 +4,7 @@ Stores any object as inert entity. Filtering is not supported.
 
 ## Super class
 
-[`FilteredDataset`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.md)
+[`FilteredDataset`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.md)
 -\> `DefaultFilteredDataset`
 
 ## Methods
@@ -33,14 +33,14 @@ Stores any object as inert entity. Filtering is not supported.
 
 Inherited methods
 
-- [`FilteredDataset$destroy()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-destroy)
-- [`FilteredDataset$get_dataname()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataname)
-- [`FilteredDataset$get_dataset()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataset)
-- [`FilteredDataset$get_dataset_label()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataset_label)
-- [`FilteredDataset$get_keys()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-get_keys)
-- [`FilteredDataset$print()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-print)
-- [`FilteredDataset$srv_active()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-srv_active)
-- [`FilteredDataset$srv_add()`](https://insightsengineering.github.io/teal.slice/reference/FilteredDataset.html#method-srv_add)
+- [`FilteredDataset$destroy()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-destroy)
+- [`FilteredDataset$get_dataname()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataname)
+- [`FilteredDataset$get_dataset()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataset)
+- [`FilteredDataset$get_dataset_label()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-get_dataset_label)
+- [`FilteredDataset$get_keys()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-get_keys)
+- [`FilteredDataset$print()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-print)
+- [`FilteredDataset$srv_active()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-srv_active)
+- [`FilteredDataset$srv_add()`](https://pharmaverse.github.io/teal.slice/reference/FilteredDataset.html#method-srv_add)
 
 ------------------------------------------------------------------------
 

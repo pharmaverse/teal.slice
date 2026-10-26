@@ -15,11 +15,11 @@ It provides 3 main features to the framework:
 - `teal_slice` / `teal_slices`: plain S3 objects (built on
   [`shiny::reactiveValues`](https://rdrr.io/pkg/shiny/man/reactiveValues.html))
   that store the specification of a filter and of the filter panel
-  - [`teal_slice()`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+  - [`teal_slice()`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
     defines one filter on a variable (`dataname`, `varname`, `selected`,
     `keep_na`, `fixed`, `anchored`, …) or a custom expression (`id`,
     `expr`)
-  - [`teal_slices()`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)
+  - [`teal_slices()`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)
     is a collection of `teal_slice` with panel-wide settings
     (`include_varnames`, `exclude_varnames`, `count_type`, `allow_add`)
 - `FilteredData` R6 class that holds the data, manages the filter states
@@ -53,13 +53,13 @@ Usage in other framework packages:
 - `teal`: the main consumer of this package.
   - `teal::init(filter = teal_slices(...))` takes the filter
     specification; `teal` has its own `teal::teal_slices()` that extends
-    [`teal.slice::teal_slices()`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)
+    [`teal.slice::teal_slices()`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)
     with `module_specific` and `mapping` arguments.
   - `teal` creates the `FilteredData` object via
-    [`teal.slice::init_filtered_data()`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md)
+    [`teal.slice::init_filtered_data()`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md)
     from the `teal_data` object, renders the filter panel and appends
     the code from
-    [`get_filter_expr()`](https://insightsengineering.github.io/teal.slice/reference/get_filter_expr.md)
+    [`get_filter_expr()`](https://pharmaverse.github.io/teal.slice/reference/get_filter_expr.md)
     to the object passed to the modules.
   - Snapshot manager and module-specific filters in `teal` rely on the
     shared state of `teal_slice` objects.

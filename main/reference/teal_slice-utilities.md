@@ -1,7 +1,7 @@
 # `teal_slice` utility functions
 
 Helper functions for working with
-[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
 object.
 
 ## Usage

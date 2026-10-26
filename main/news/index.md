@@ -6,14 +6,14 @@
 
 - Fixed placement of add filter button to avoid conflicting with sidebar
   resizing
-  ([\#694](https://github.com/insightsengineering/teal.slice/issues/694)).
+  ([\#694](https://github.com/pharmaverse/teal.slice/issues/694)).
 
 ## teal.slice 0.8.2
 
 CRAN release: 2026-07-29
 
 - Fixed shiny session clean up due to `shiny` package update
-  ([\#682](https://github.com/insightsengineering/teal.slice/issues/682)).
+  ([\#682](https://github.com/pharmaverse/teal.slice/issues/682)).
 
 ## teal.slice 0.8.1
 
@@ -22,8 +22,8 @@ CRAN release: 2026-07-02
 #### Bug fixes
 
 - Fixed `teal_slice` reactive values due to `shiny` package update
-  ([\#682](https://github.com/insightsengineering/teal.slice/issues/682),
-  [\#685](https://github.com/insightsengineering/teal.slice/issues/685)).
+  ([\#682](https://github.com/pharmaverse/teal.slice/issues/682),
+  [\#685](https://github.com/pharmaverse/teal.slice/issues/685)).
 
 ## teal.slice 0.8.0
 
@@ -33,16 +33,16 @@ CRAN release: 2026-06-04
 
 - Relaxed assertions on `teal_slices` to ignore duplicated `teal_slice`
   elements
-  ([\#675](https://github.com/insightsengineering/teal.slice/issues/675)).
+  ([\#675](https://github.com/pharmaverse/teal.slice/issues/675)).
 
 #### Bug fixes
 
 - Fixed variable label not being displayed when filtering a factor
   column
-  ([\#679](https://github.com/insightsengineering/teal.slice/issues/679)).
+  ([\#679](https://github.com/pharmaverse/teal.slice/issues/679)).
 - Fixed spurious warning about modified range choices now only raised
   after prettifying the range
-  ([\#677](https://github.com/insightsengineering/teal.slice/issues/677)).
+  ([\#677](https://github.com/pharmaverse/teal.slice/issues/677)).
 
 ## teal.slice 0.7.1
 
@@ -51,10 +51,10 @@ CRAN release: 2025-12-02
 #### Miscellaneous
 
 - Improve unit test coverage
-  ([\#666](https://github.com/insightsengineering/teal.slice/issues/666)).
+  ([\#666](https://github.com/pharmaverse/teal.slice/issues/666)).
 - Re-setting choices for slice only shows warning of modified choices if
   the post-processed range is different
-  ([\#676](https://github.com/insightsengineering/teal.slice/issues/676)).
+  ([\#676](https://github.com/pharmaverse/teal.slice/issues/676)).
 
 ## teal.slice 0.7.0
 
@@ -68,13 +68,13 @@ CRAN release: 2025-08-20
 #### Bug fixes
 
 - Fix bug where drop-down choices show no choices
-  ([\#662](https://github.com/insightsengineering/teal.slice/issues/662)).
+  ([\#662](https://github.com/pharmaverse/teal.slice/issues/662)).
 
 #### Miscellaneous
 
 - In R6 classes `finalize()` method is moved to private and is replaced
   in public API by `destroy()`
-  ([\#658](https://github.com/insightsengineering/teal.slice/issues/658)).
+  ([\#658](https://github.com/pharmaverse/teal.slice/issues/658)).
 
 ## teal.slice 0.6.0
 
@@ -85,7 +85,7 @@ CRAN release: 2025-02-03
 - Reduced the space of the filter panel by not displaying the “add
   filters” UI in a separate panel.
 - The deprecated parameters `code` and `check` were removed from
-  [`init_filtered_data()`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md).
+  [`init_filtered_data()`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md).
 
 #### Bug fixes
 
@@ -99,9 +99,9 @@ CRAN release: 2025-02-03
 
 #### Miscellaneous
 
-- [`print.teal_slice()`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md)
+- [`print.teal_slice()`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md)
   and
-  [`print.teal_slices()`](https://insightsengineering.github.io/teal.slice/reference/teal_slices-utilities.md)
+  [`print.teal_slices()`](https://pharmaverse.github.io/teal.slice/reference/teal_slices-utilities.md)
   now return object invisibly.
 
 ## teal.slice 0.5.1
@@ -133,9 +133,9 @@ CRAN release: 2024-02-06
 
 - `TealData` object is no longer supported by `teal.slice`.
 - `set_filter_state` no longer accepts a nested list. Use
-  [`teal_slices()`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)
+  [`teal_slices()`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)
   and
-  [`teal_slice()`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)
+  [`teal_slice()`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)
   instead.
 - Renamed `FilteredDataset` subclass that handles `data.frame`s from
   `DefaultFilteredDataset` to `DataframeFilteredDataset`. Added new
@@ -153,7 +153,7 @@ CRAN release: 2024-02-06
 - Removed storing and restoring of `teal_slices` objects.
 - Update documentation and code to reflect the changes due to the
   refactor of `teal.data::JoinKeys` into
-  [`teal.data::join_keys`](https://insightsengineering.github.io/teal.data/latest-tag/reference/join_keys.html).
+  [`teal.data::join_keys`](https://rdrr.io/pkg/teal.data/man/join_keys.html).
 
 ## teal.slice 0.4.0
 
@@ -246,7 +246,7 @@ CRAN release: 2024-02-06
   `CDISCFilteredData`.
 - Changed constructor of `FilteredData` to not require `TealData`
   object. See
-  [`help(init_filtered_data)`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md)
+  [`help(init_filtered_data)`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md)
   for more details.
 - The filtered data is now stored in `FilteredData` not
   `FilteredDataset`.

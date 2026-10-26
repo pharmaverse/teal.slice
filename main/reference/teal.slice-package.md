@@ -7,12 +7,11 @@ modules.
 
 Useful links:
 
-- <https://insightsengineering.github.io/teal.slice/>
+- <https://pharmaverse.github.io/teal.slice/>
 
-- <https://github.com/insightsengineering/teal.slice/>
+- <https://github.com/pharmaverse/teal.slice/>
 
-- Report bugs at
-  <https://github.com/insightsengineering/teal.slice/issues>
+- Report bugs at <https://github.com/pharmaverse/teal.slice/issues>
 
 ## Author
 

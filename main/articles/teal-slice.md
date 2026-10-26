@@ -70,18 +70,18 @@ vignette.
 
 \
 [`library`](https://rdrr.io/r/base/library.html)`(`[`shiny`](https://shiny.posit.co/)`)`\
-[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.slice`](https://insightsengineering.github.io/teal.slice/)`)`\
+[`library`](https://rdrr.io/r/base/library.html)`(`[`teal.slice`](https://pharmaverse.github.io/teal.slice/)`)`\
 \
 `# create a FilteredData object`\
-`datasets`` ``<-`` `[`init_filtered_data`](https://insightsengineering.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
+`datasets`` ``<-`` `[`init_filtered_data`](https://pharmaverse.github.io/teal.slice/reference/init_filtered_data.md)`(`[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` ``iris``, mtcars ``=`` ``mtcars``)``)`\
 \
 `# setting initial state`\
-[`set_filter_state`](https://insightsengineering.github.io/teal.slice/reference/filter_state_api.md)`(`\
+[`set_filter_state`](https://pharmaverse.github.io/teal.slice/reference/filter_state_api.md)`(`\
 `  datasets ``=`` ``datasets``,`\
-`  filter ``=`` `[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md)`(`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
-`    `[`teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
+`  filter ``=`` `[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md)`(`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"iris"``, varname ``=`` ``"Species"``, selected ``=`` ``"virginica"``, keep_na ``=`` ``FALSE``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, id ``=`` ``"4 cyl"``, title ``=`` ``"4 Cylinders"``, expr ``=`` ``"cyl == 4"``)``,`\
+`    `[`teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice.md)`(``dataname ``=`` ``"mtcars"``, varname ``=`` ``"mpg"``, selected ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``20.0``, ``25.0``)``, keep_na ``=`` ``FALSE``, keep_inf ``=`` ``FALSE``)``,`\
 `    include_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``iris ``=`` `[`c`](https://rdrr.io/r/base/c.html)`(``"Species"``, ``"Sepal.Length"``)``)``,`\
 `    exclude_varnames ``=`` `[`list`](https://rdrr.io/r/base/list.html)`(``mtcars ``=`` ``"cyl"``)``,`\
 `    count_type ``=`` ``"all"``,`\

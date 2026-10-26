@@ -2,7 +2,7 @@
 
 Create a `teal_slice` object that holds complete information on
 filtering one variable. Check out
-[`teal_slice-utilities`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md)
+[`teal_slice-utilities`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md)
 functions for working with `teal_slice` object.
 
 ## Usage
@@ -165,12 +165,12 @@ to the `SE`'s `rowData` or `colData`.
 
 ## See also
 
-[`teal_slices`](https://insightsengineering.github.io/teal.slice/reference/teal_slices.md),
-[`is.teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md),
-[`as.teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md),
-[`as.list.teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md),
-[`print.teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md),
-[`format.teal_slice`](https://insightsengineering.github.io/teal.slice/reference/teal_slice-utilities.md)
+[`teal_slices`](https://pharmaverse.github.io/teal.slice/reference/teal_slices.md),
+[`is.teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md),
+[`as.teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md),
+[`as.list.teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md),
+[`print.teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md),
+[`format.teal_slice`](https://pharmaverse.github.io/teal.slice/reference/teal_slice-utilities.md)
 
 ## Examples
 
