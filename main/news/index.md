@@ -8,6 +8,14 @@
   resizing
   ([\#694](https://github.com/pharmaverse/teal.slice/issues/694)).
 
+#### Miscellaneous
+
+- teal.slice has moved to the pharmaverse GitHub organisation:
+  <https://github.com/pharmaverse/teal.slice>.
+- Appsilon becomes a core contributor and joins F. Hoffmann-La Roche AG
+  as a copyright holder of teal.slice, working alongside the wider
+  contributor community.
+
 ## teal.slice 0.8.2
 
 CRAN release: 2026-07-29

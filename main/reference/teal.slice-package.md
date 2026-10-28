@@ -27,7 +27,7 @@ Authors:
 - Aleksander Chlebowski <aleksander.chlebowski@contractors.roche.com>
   ([ORCID](https://orcid.org/0000-0001-5018-6294))
 
-- Andre Verissimo <andre.verissimo@roche.com>
+- Andre Verissimo <andre.verissimo@appsilon.com>
   ([ORCID](https://orcid.org/0000-0002-2212-339X))
 
 - Lluís Revilla Sancho <lluis.revilla_sancho@roche.com>
@@ -54,3 +54,5 @@ Authors:
 Other contributors:
 
 - F. Hoffmann-La Roche AG \[copyright holder, funder\]
+
+- Appsilon Sp. z o.o. <teal@appsilon.com> \[copyright holder, funder\]
