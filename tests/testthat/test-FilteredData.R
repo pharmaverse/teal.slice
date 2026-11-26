@@ -1328,7 +1328,8 @@ test_that("keeps type even after merging keys, #527", {
 
   unfiltered <- shiny::isolate(datasets$get_data("d2", filtered = FALSE))
   filtered <- shiny::isolate(datasets$get_data("d2", filtered = TRUE))
-  expect_identical(vapply(unfiltered, class, ""),
-                   vapply(filtered, class, ""))
-
+  expect_identical(
+    vapply(unfiltered, class, ""),
+    vapply(filtered, class, "")
+  )
 })
