@@ -223,7 +223,7 @@ Each `FilterState` produces a subsetting expression: `SEX == "F"` and `AGE >= 20
 The expressions are combined with `&` and passed to `dplyr::filter`, producing `ADSL <- dplyr::filter(ADSL, SEX == "F" & AGE >= 20 & AGE <= 60)`. `DataframeFilteredDataset` puts this call in a list and returns it to `FilteredData`.
 
 (6) `ADTTE` is also a `data.frame` so the `FilteredDataset` that stores it works much the same as the one for `ADSL`.
-The one difference is that the `dplyr::filter` call for `ADTTE` is followed by a `dplyr::inner_join` call to merge the filtering result with the parent data set (`ADSL`) so that key columns remain consistent.
+The one difference is that the `dplyr::filter` call for `ADTTE` is followed by a `dplyr::semi_join` call to merge the filtering result with the parent data set (`ADSL`) so that key columns remain consistent.
 Note that this is only done when `join_keys` is specified - otherwise `ADTTE` would be treated as a separate data set and filtered independently.
 
 (7) The `MAE` data set is a `MultiAssayExperiment`, which contains multiple sub-objects which can be filtered on.

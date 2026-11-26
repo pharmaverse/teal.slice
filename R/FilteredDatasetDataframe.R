@@ -166,7 +166,7 @@ DataframeFilteredDataset <- R6::R6Class( # nolint
           as.name(dataname),
           as.call(
             c(
-              str2lang("dplyr::inner_join"),
+              str2lang("dplyr::semi_join"),
               x = as.name(dataname),
               y = str2lang(y_arg),
               more_args

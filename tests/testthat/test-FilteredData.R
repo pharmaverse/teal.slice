@@ -85,7 +85,7 @@ testthat::test_that("set_datasets creates FilteredDataset object linked with par
   filtered_data$set_dataset(data = head(iris), dataname = "child")
   testthat::expect_identical(
     shiny::isolate(filtered_data$get_call("child"))[[1]],
-    quote(child <- dplyr::inner_join(x = child, y = parent[, c("id"), drop = FALSE], by = "id"))
+    quote(child <- dplyr::semi_join(x = child, y = parent[, c("id"), drop = FALSE], by = "id"))
   )
 })
 
@@ -1313,4 +1313,23 @@ testthat::test_that("ui_available_filters renders the expected structural elemen
   testthat::expect_match(ui_html, "bi-plus-square", fixed = TRUE)
   testthat::expect_match(ui_html, 'id="test-checkbox"', fixed = TRUE)
   testthat::expect_match(ui_html, 'id="test-show".*available-menu')
+})
+
+
+test_that("keeps type even after merging keys, #527", {
+  td <- teal.data::teal_data(join_keys = teal.data::join_keys(teal.data::join_key("d1", "d2", c("pk" = "id")))) |>
+    within(d1 <- data.frame(id = 1:5, pk = c(2, 3, 2, 1, 4), val = 1:5)) |>
+    within(d2 <- data.frame(id = 1:5, value = 1:5))
+
+  datasets <- init_filtered_data(
+    x = sapply(c("d1", "d2"), function(dn) td[[dn]], simplify = FALSE),
+    join_keys = teal.data::join_keys(td)
+  )
+
+  unfiltered <- shiny::isolate(datasets$get_data("d2", filtered = FALSE))
+  filtered <- shiny::isolate(datasets$get_data("d2", filtered = TRUE))
+  expect_identical(
+    vapply(unfiltered, class, ""),
+    vapply(filtered, class, "")
+  )
 })
