@@ -2,6 +2,7 @@
 
 ### Bug fixes
 
+* Fixed column type changes and row duplication in filtered child datasets caused by the join with the parent (#527).
 * Fixed placement of add filter button to avoid conflicting with sidebar resizing (#694).
 
 ### Miscellaneous
