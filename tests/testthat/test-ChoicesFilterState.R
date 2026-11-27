@@ -707,6 +707,57 @@ testthat::test_that("get_call works for various combinations", {
   )
 })
 
+testthat::test_that("get_call with empty selection preserves data class and excludes all observed values", {
+  fs_num <- ChoicesFilterState$new(
+    x = nums,
+    slice = teal_slice(dataname = "data", varname = "var", selected = character(0))
+  )
+  call_num <- shiny::isolate(fs_num$get_call())
+  testthat::expect_identical(call_num, quote(!var %in% c(1, 2, 3)))
+  testthat::expect_false(any(eval(call_num, list(var = nums))))
+
+  fs_date <- ChoicesFilterState$new(
+    x = dates,
+    slice = teal_slice(dataname = "data", varname = "var", selected = character(0))
+  )
+  call_date <- shiny::isolate(fs_date$get_call())
+  testthat::expect_identical(
+    call_date,
+    quote(!var %in% as.Date(c("2000-01-01", "2000-01-02", "2000-01-03")))
+  )
+  testthat::expect_false(any(eval(call_date, list(var = dates))))
+
+  fs_posixct <- ChoicesFilterState$new(
+    x = posixct,
+    slice = teal_slice(dataname = "data", varname = "var", selected = character(0))
+  )
+  call_posixct <- shiny::isolate(fs_posixct$get_call())
+  testthat::expect_identical(
+    call_posixct,
+    quote(!var %in% as.POSIXct(c("2000-01-01 12:00:00", "2000-01-01 12:00:01", "2000-01-01 12:00:02"), tz = "GMT"))
+  )
+  testthat::expect_false(any(eval(call_posixct, list(var = posixct))))
+
+  fs_posixlt <- ChoicesFilterState$new(
+    x = posixlt,
+    slice = teal_slice(dataname = "data", varname = "var", selected = character(0))
+  )
+  call_posixlt <- shiny::isolate(fs_posixlt$get_call())
+  testthat::expect_identical(
+    call_posixlt,
+    quote(!var %in% as.POSIXlt(c("2000-01-01 12:00:00", "2000-01-01 12:00:01", "2000-01-01 12:00:02"), tz = "GMT"))
+  )
+  testthat::expect_false(any(eval(call_posixlt, list(var = posixlt))))
+
+  fs_limited <- ChoicesFilterState$new(
+    x = chars,
+    slice = teal_slice(dataname = "data", varname = "var", choices = chars[1:2], selected = character(0))
+  )
+  call_limited <- shiny::isolate(fs_limited$get_call())
+  testthat::expect_identical(call_limited, quote(!var %in% c("item1", "item2", "item3")))
+  testthat::expect_false(any(eval(call_limited, list(var = chars))))
+})
+
 testthat::test_that("Factor with label attribute displays label in UI", {
   factor_with_label <- factor(c("a", "b", "c", "a", "b"))
   varlabel <- "Category Label"
