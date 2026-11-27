@@ -224,13 +224,9 @@ ChoicesFilterState <- R6::R6Class( # nolint
       choices <- private$get_choices()
       selected <- private$get_selected()
       fun_compare <- if (length(selected) == 1L) "==" else "%in%"
-      filter_call <- if (length(selected) == 0) {
-        call("!", call(fun_compare, varname, make_c_call(as.character(choices))))
-      } else {
-        if (setequal(selected, choices) && !private$is_choice_limited) {
-          NULL
-        } else if (inherits(private$x, "Date")) {
-          call(fun_compare, varname, call("as.Date", make_c_call(as.character(selected))))
+      make_values_call <- function(values) {
+        if (inherits(private$x, "Date")) {
+          call("as.Date", make_c_call(as.character(values)))
         } else if (inherits(private$x, c("POSIXct", "POSIXlt"))) {
           class <- class(private$x)[1L]
           date_fun <- as.name(
@@ -239,17 +235,21 @@ ChoicesFilterState <- R6::R6Class( # nolint
               "POSIXlt" = "as.POSIXlt"
             )
           )
-          call(
-            fun_compare,
-            varname,
-            as.call(list(date_fun, make_c_call(as.character(selected)), tz = private$tzone))
-          )
+          as.call(list(date_fun, make_c_call(as.character(values)), tz = private$tzone))
         } else if (is.numeric(private$x)) {
-          call(fun_compare, varname, make_c_call(as.numeric(selected)))
+          make_c_call(as.numeric(values))
         } else {
-          # This handles numerics, characters, and factors.
-          call(fun_compare, varname, make_c_call(selected))
+          # This handles characters and factors.
+          make_c_call(values)
         }
+      }
+      filter_call <- if (length(selected) == 0) {
+        excluded <- if (private$is_choice_limited) names(.table(private$x)) else choices
+        call("!", call(fun_compare, varname, make_values_call(excluded)))
+      } else if (setequal(selected, choices) && !private$is_choice_limited) {
+        NULL
+      } else {
+        call(fun_compare, varname, make_values_call(selected))
       }
       private$add_keep_na_call(filter_call, varname)
     }
